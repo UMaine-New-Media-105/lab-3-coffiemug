@@ -8,7 +8,7 @@ function draw() {
   
   flowerCenter(200,130)
     
-  colorChange();
+  colorChange('hsl(5,90%,60%)');
 
   flower(200,130);
 
@@ -36,14 +36,14 @@ function flowerCenter(x,y){
   
 }
 
-function colorChange(){
+function colorChange(baseColor){
   if (mouseX <=100){
   fill('cornflowerblue');
   }
-else if(mouseX>300){
+  else if(mouseX>300){
   fill('gold');
 } 
-else{
-  fill('hsl(5,90%,60%)');
+  else{
+  fill(baseColor);
 }
 }
