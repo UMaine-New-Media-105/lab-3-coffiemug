@@ -8,16 +8,8 @@ function draw() {
   
   flowerCenter(200,130)
     
-  
-if (mouseX <=100){
-  fill('cornflowerblue');
-  }
-else if(mouseX>300){
-  fill('gold');
-} 
-else{
-  fill('hsl(5,90%,60%)');
-}
+  colorChange();
+
   flower(200,130);
 
 }
@@ -42,4 +34,16 @@ function flowerCenter(x,y){
   ellipse(0,70,80)
   pop();
   
+}
+
+function colorChange(){
+  if (mouseX <=100){
+  fill('cornflowerblue');
+  }
+else if(mouseX>300){
+  fill('gold');
+} 
+else{
+  fill('hsl(5,90%,60%)');
+}
 }
